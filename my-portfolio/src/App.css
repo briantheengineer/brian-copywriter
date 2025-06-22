@@ -1,0 +1,29 @@
+@import "tailwindcss";
+* { 
+    background-color:#FBF8CC ;
+    color: #03045E;
+    box-sizing: border-box ;
+    scroll-behavior: smooth;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+
+.yellowbutton {
+    background-color: #F7F197;
+}
+
+.blueborder {
+    border:#03045E,
+}
+
+.bluelight {
+    color: #578FCA;
+}
+
+.bluedark {
+    color: #03045E;
+}
