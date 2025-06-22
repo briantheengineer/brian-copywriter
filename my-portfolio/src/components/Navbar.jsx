@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll';
+import LanguageSwitcher from './LanguageSwitcher';
 import '../App.css';
 
 export default function Navbar () {
@@ -50,8 +51,9 @@ export default function Navbar () {
         >
           Talk to Me
         </Link>
-      </ul>
 
+      </ul>
+      <LanguageSwitcher />
       <div className="w-1/3" />
     </div>
   );
