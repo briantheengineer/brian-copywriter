@@ -2,6 +2,29 @@
   "greeting": "Olá, eu sou o Brian",
   "role": "Copywriter Profissional",
   "resume": "Currículo",
-  "about_me": "Oi! Eu sou o Brian — um copywriter que sempre teve um caso sério com as palavras (desde que aprendi a juntar duas delas).\n\nDesde criança, escrever era meu jeito de entender o mundo. Hoje, é o meu jeito de ajudar marcas a venderem mais, se comunicarem melhor e virarem inesquecíveis.\n\nSe você quer alguém que escreva como gente e pense como estrategista — prazer, sou eu."
+  "about_me": "Oi! Eu sou o Brian — um copywriter que sempre teve um caso sério com as palavras (desde que aprendi a juntar duas delas).\n\nDesde criança, escrever era meu jeito de entender o mundo. Hoje, é o meu jeito de ajudar marcas a venderem mais, se comunicarem melhor e virarem inesquecíveis.\n\nSe você quer alguém que escreva como gente e pense como estrategista — prazer, sou eu.",
+  "contact": "contato.",
+  "navbar": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "projects": {
+    "title": "projetos.",
+    "solis": {
+      "title": "Campanha de Verão - Solis Energy",
+      "description": "Copywriting para campanha promocional de verão com desconto de até 25% em placas solares."
+    }
+  },
+  "contact_me": "contato.",
+  "contact_intro": "Se você gostou do que viu e quer transformar ideias em palavras que vendem, me manda uma mensagem. Estou pronto pra ouvir seu projeto.",
+  "sending": "Enviando...",
+  "send_message": "Enviar mensagem",
+  "success_message": "Sua mensagem foi enviada com sucesso! ✅",
+  "error_message": "Ocorreu um erro ao enviar a mensagem. Tente novamente.",
+  "form": {
+    "name_placeholder": "Seu nome",
+    "email_placeholder": "Seu email",
+    "message_placeholder": "Sua mensagem"
+  }
 }
-

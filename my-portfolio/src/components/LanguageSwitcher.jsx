@@ -8,6 +8,7 @@ export default function LanguageSwitcher() {
 
   const flagButton = (lang, img, alt) => (
     <button
+      key={lang}
       onClick={() => i18n.changeLanguage(lang)}
       className={`rounded-full transition-transform duration-200 hover:scale-110 focus:outline-none ${
         currentLang === lang
@@ -24,8 +25,8 @@ export default function LanguageSwitcher() {
   );
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex gap-2">
-      {flagButton('en', us, 'English')}  
+    <div className="flex gap-2 items-center">
+      {flagButton('en', us, 'English')}
       {flagButton('pt', br, 'Português')}
     </div>
   );

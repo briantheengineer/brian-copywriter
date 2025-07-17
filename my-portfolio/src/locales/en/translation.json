@@ -1,6 +1,30 @@
 {
-  "greeting": "Hello, I'm Brian",
+  "greeting": "Hi, I'm Brian",
   "role": "Professional Copywriter",
   "resume": "Resume",
-  "about_me": "Hey! I'm Brian — a copywriter who's been in a long-term relationship with words (ever since I learned to put two of them together).\n\nWriting has always been how I made sense of the world. Now, it’s how I help brands sell more, connect better, and become unforgettable.\n\nI work with strategic copy — for websites, launches, emails, and anywhere a few good words can make all the difference. My goal? To make your message get read, remembered, and clicked.\n\nIf you're looking for someone who writes like a human and thinks like a strategist — that’s me."
+  "about_me": "Hi! I'm Brian — a copywriter who's been in love with words since I learned to string two of them together.\n\nSince childhood, writing was how I understood the world. Today, it's how I help brands sell more, communicate better, and become unforgettable.\n\nIf you're looking for someone who writes like a human and thinks like a strategist — nice to meet you, that's me.",
+  "contact": "contact.",
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "projects.",
+    "solis": {
+      "title": "Summer Campaign - Solis Energy",
+      "description": "Copywriting for summer campaign with up to 25% discount on solar panels."
+    }
+  },
+  "contact_me": "contact.",
+  "contact_intro": "If you liked what you saw and want to turn ideas into words that sell, send me a message. I'm ready to hear about your project.",
+  "sending": "Sending...",
+  "send_message": "Send message",
+  "success_message": "Your message was sent successfully! ✅",
+  "error_message": "An error occurred while sending the message. Please try again.",
+  "form": {
+    "name_placeholder": "Your name",
+    "email_placeholder": "Your email",
+    "message_placeholder": "Your message"
+  }
 }
