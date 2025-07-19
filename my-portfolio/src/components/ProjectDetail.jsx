@@ -1,4 +1,6 @@
 import { useParams } from 'react-router-dom';
+import PostSolis from '../images/PostSolisEnergy.jpg';
+import SolisEnergy from '../images/SolisEnergy.png'
 import SimpleNavbar from './SimpleNavbar';
 
 const projects = [
@@ -6,7 +8,7 @@ const projects = [
     id: 'solis-energy',
     title: 'Campanha de Verão - Solis Energy',
     description: 'Copywriting para campanha promocional de verão com desconto de até 25% em placas solares.',
-    imageUrl: '/path/para/solis-image.png',
+   imageUrl: SolisEnergy,
     details: {
       intro: `A Solis Energy é uma empresa especializada em venda e instalação de placas solares para geração de energia elétrica. Fui contratado para criar o copy de uma campanha de verão, atraindo novos consumidores durante os meses mais quentes do ano.`,
       campaignParts: [
@@ -49,10 +51,15 @@ Não perca essa oportunidade, marque sua instalação e comece a economizar com 
         }
       ],
       socialPosts: [
-        'O calorzão chegou? Aproveite 25% de desconto na instalação de placas solares com a Solis Energy. Deixe seu ar-condicionado ligado sem medo da conta de luz. Promoção válida para os 50 primeiros clientes. Corre! #SolisEnergy #PromoVerao.',
-        'Pare de se preocupar com a conta de luz nesse verão. Com as placas solares da Solis Energy você pode aproveitar o calor sem o peso no bolso. Corra e aproveite a promoção de verão e comece a economizar agora mesmo! #SolisEnergy #PromoVerao #Energia.',
-        'A energia solar é a fonte de energia limpa mais acessível e mais simples de se instalar! Com a promoção de verão da Solis Energy, fica ainda mais fácil. Até o fim de fevereiro, novos clientes têm até 25% de desconto na instalação. Diminua sua conta de luz hoje, contrate Solis Energy! #PromoVerao #SolisEnergy.',
-        'Você sabia? Com energia solar, você pode reduzir até 95% da sua conta de luz! E com a promoção de verão da Solis Energy, fica ainda mais fácil: 25% de desconto para novos clientes. Não deixe essa oportunidade passar! #PromoVerao #SolisEnergy.'
+        {
+          type: 'image',
+          src: PostSolis,
+          alt: 'Post da campanha Solis Energy'
+        },
+        '1- O calorzão chegou? Aproveite 25% de desconto na instalação de placas solares com a Solis Energy. Deixe seu ar-condicionado ligado sem medo da conta de luz. Promoção válida para os 50 primeiros clientes. Corre! #SolisEnergy #PromoVerao.',
+        '2- Pare de se preocupar com a conta de luz nesse verão. Com as placas solares da Solis Energy você pode aproveitar o calor sem o peso no bolso. Corra e aproveite a promoção de verão e comece a economizar agora mesmo! #SolisEnergy #PromoVerao #Energia.',
+        '3- A energia solar é a fonte de energia limpa mais acessível e mais simples de se instalar! Com a promoção de verão da Solis Energy, fica ainda mais fácil. Até o fim de fevereiro, novos clientes têm até 25% de desconto na instalação. Diminua sua conta de luz hoje, contrate Solis Energy! #PromoVerao #SolisEnergy.',
+        '4- Você sabia? Com energia solar, você pode reduzir até 95% da sua conta de luz! E com a promoção de verão da Solis Energy, fica ainda mais fácil: 25% de desconto para novos clientes. Não deixe essa oportunidade passar! #PromoVerao #SolisEnergy.'
       ],
       blogPost: {
         title: '5 MOTIVOS PARA INVESTIR EM ENERGIA SOLAR AINDA ESSE ANO',
@@ -99,7 +106,7 @@ export default function ProjectDetail() {
     }
   } = project;
 
-return (
+  return (
     <>
       <SimpleNavbar />
       <main className="min-h-screen yellowbg bluedark text-white px-4 md:px-8 lg:px-16 pt-24 pb-16 max-w-6xl mx-auto space-y-14">
@@ -108,7 +115,7 @@ return (
         <img
           src={imageUrl}
           alt={title}
-          className="w-full max-h-[400px] object-cover rounded-xl shadow-md"
+          className="w-full max-h-[300px] object-cover rounded-xl shadow-md"
         />
 
         <section className="text-base md:text-lg leading-relaxed space-y-4">
@@ -118,13 +125,13 @@ return (
         <section className="bg-bluedark border border-gray-700 rounded-xl p-6 md:p-8 space-y-4 text-base md:text-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Campanha composta por:</h2>
           <ul className="list-disc list-inside space-y-2">
-            {campaignParts.map((part, i) => <li key={i}>{part}</li>)}
+            {(campaignParts || []).map((part, i) => <li key={i}>{part}</li>)}
           </ul>
         </section>
 
         <section className="bg-bluedark border border-gray-700 rounded-xl p-6 md:p-8 space-y-8 text-base md:text-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">E-mails promocionais</h2>
-          {emails.map(({ title, heading, subject, body }, i) => (
+          {(emails || []).map(({ title, heading, subject, body }, i) => (
             <div key={i} className="border border-gray-700 rounded-lg p-4 space-y-2">
               <h3 className="text-xl md:text-2xl font-semibold">{title}</h3>
               <p className="font-bold">{heading}</p>
@@ -136,9 +143,13 @@ return (
 
         <section className="bg-bluedark border border-gray-700 rounded-xl p-6 md:p-8 space-y-6 text-base md:text-lg">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">Postagens para Redes Sociais</h2>
-          {socialPosts.map((post, i) => (
+          {(socialPosts || []).map((post, i) => (
             <div key={i} className="border border-gray-700 rounded-lg p-4">
-              <p>{post}</p>
+              {typeof post === 'string' ? (
+                <p>{post}</p>
+              ) : post.type === 'image' ? (
+                <img src={post.src} alt={post.alt} className="w-full rounded-md shadow" />
+              ) : null}
             </div>
           ))}
         </section>
@@ -148,7 +159,7 @@ return (
           <h2 className="text-2xl md:text-3xl font-bold mb-2">{blogPost.title}</h2>
           <p>{blogPost.intro}</p>
           <ol className="list-decimal list-inside space-y-2">
-            {blogPost.reasons.map((reason, i) => (
+            {(blogPost?.reasons || []).map((reason, i) => (
               <li key={i}>{reason}</li>
             ))}
           </ol>
