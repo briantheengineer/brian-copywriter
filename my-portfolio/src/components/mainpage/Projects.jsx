@@ -1,6 +1,7 @@
 import { Element } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+
 import Banner from '/src/images/banner-teste.jpg'
 
 
