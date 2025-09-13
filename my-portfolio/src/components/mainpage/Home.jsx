@@ -1,6 +1,7 @@
 import { Element } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import Brian from '/src/images/brian.jpg.jpeg';
+//import ResumePdf from '/src/assets/Resume.pdf'; // coloque seu PDF aqui
 
 export default function Home() {
   const { t } = useTranslation();
@@ -12,9 +13,16 @@ export default function Home() {
         <div data-aos="fade-left" className="w-full md:w-1/2 text-center md:text-left">
           <h3 className="text-3xl sm:text-4xl md:text-5xl">{t('greeting')}</h3>
           <h1 className="text-5xl sm:text-6xl md:text-8xl">{t('role')}</h1>
-          <button className="p-2 mt-5 yellowbutton border rounded-sm shadow-2xl">
+
+          {/* Botão de download do currículo */}
+          <a
+            //href={ResumePdf}
+            download="Brian_Castelhano_Resume.pdf"
+            className="inline-block mt-5 px-6 py-3 bg-white text-black font-semibold rounded-2xl shadow-md
+                       hover:bg-gray-300 hover:scale-105 hover:shadow-lg transition duration-300 cursor-pointer"
+          >
             {t('resume')}
-          </button>
+          </a>
         </div>
 
         <div data-aos="fade-right" className="w-full md:w-1/3 flex justify-center">

@@ -81,12 +81,14 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-xl bg-white text-black placeholder-gray-600 resize-none"
                 ></textarea>
                 <button
-                  type="submit"
-                  disabled={status === 'sending'}
-                  className="bg-white text-black font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-gray-200 transition disabled:opacity-50"
-                >
-                  {status === 'sending' ? t('sending') : t('send_message')}
-                </button>
+  type="submit"
+  disabled={status === 'sending'}
+  className="bg-white text-black font-semibold px-6 py-3 rounded-2xl shadow-md 
+             hover:bg-gray-200 hover:scale-105 hover:shadow-lg 
+             transition-transform duration-300 disabled:opacity-50 cursor-pointer"
+>
+  {status === 'sending' ? t('sending') : t('send_message')}
+</button>
               </form>
             )}
 

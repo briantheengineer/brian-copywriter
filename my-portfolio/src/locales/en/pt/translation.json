@@ -1,8 +1,8 @@
 {
   "greeting": "Olá, eu sou o Brian",
   "role": "Copywriter Profissional",
-  "resume": "Currículo",
-  "about_me": "Oi! Eu sou o Brian — um copywriter que sempre foi apaixonado pelas palavras (pelo menos desde quando eu aprendi a ler).\n\nDesde criança, escrever era meu jeito de entender o mundo. Hoje, é o meu jeito de ajudar marcas a venderem mais, se comunicarem melhor e virarem inesquecíveis.\n\nSe você quer alguém que escreva como gente e pense como estrategista — prazer, sou eu.",
+  "resume": "Baixar Currículo",
+  "about_me": "Oi! Eu sou o Brian, um copywriter que sempre foi apaixonado pelas palavras (pelo menos desde quando eu aprendi a ler).\n\nDesde criança, escrever era meu jeito de entender o mundo e me expressar. Hoje, é o meu jeito de ajudar marcas a venderem mais, se comunicarem melhor e se tornarem inesquecíveis.\n\nSe você quer alguém que escreva como gente e pense como estrategista. Prazer, sou eu.",
   "contact": "contato.",
   "navbar": {
     "about": "Sobre",
@@ -14,10 +14,14 @@
     "solis": {
       "title": "Campanha de Verão - Solis Energy",
       "description": "Copywriting para campanha promocional de verão com desconto de até 25% em placas solares."
+    },
+    "globaltrek": {
+      "title": "Lançamento do App - Global Trek",
+      "description": "Campanha de copywriting para o lançamento oficial do app de viagens Global Trek, com textos para site, redes sociais, emails e blog."
     }
   },
   "contact_me": "contato.",
-  "contact_intro": "Se você gostou do que viu e quer transformar ideias em palavras que vendem, me manda uma mensagem. Estou pronto pra ouvir seu projeto.",
+  "contact_intro": "Se você gostou do que viu e quer transformar suas ideias em palavras que vendem, me manda uma mensagem. Estou pronto pra te ajudar com seu projeto.",
   "sending": "Enviando...",
   "send_message": "Enviar mensagem",
   "success_message": "Sua mensagem foi enviada com sucesso! ✅",
